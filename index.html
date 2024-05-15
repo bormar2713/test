@@ -1,0 +1,58 @@
+<head>
+	<title>PZ2024 - 2</title>
+</head>
+<style>
+body{
+	background-color: #561C24;
+}
+#footer
+{
+	clear: both;
+	color: #C7B7A3;
+	text-align: center;
+	padding: 20px;
+	font-size: 18px;
+}
+ body{ 
+  background-color: #561C24;
+  color: #E8D8C4;
+  font-family: Helvetica;
+  }
+</style>
+<body>
+
+<div><center>
+	<img class="mySlides" src="kw1.PNG" width="750" height="600" style="margin: 5px; padding: 5px; border: 1px solid #E8D8C4; border-style: dashed;">
+	<img class="mySlides" src="kw2.PNG" width="750" height="600" style="margin: 5px; padding: 5px; border: 1px solid #E8D8C4; border-style: dashed;">
+	<img class="mySlides" src="kw3.PNG" width="750" height="600" style="margin: 5px; padding: 5px; border: 1px solid #E8D8C4; border-style: dashed;">
+	<img class="mySlides" src="kw4.PNG" width="750" height="600" style="margin: 5px; padding: 5px; border: 1px solid #E8D8C4; border-style: dashed;">
+	<img class="mySlides" src="tabela1.JPG" width="750" height="600" style="margin: 5px; padding: 5px; border: 1px solid #E8D8C4; border-style: dashed;">
+	<img class="mySlides" src="tabela2.JPG" width="750" height="600" style="margin: 5px; padding: 5px; border: 1px solid #E8D8C4; border-style: dashed;">
+	<img class="mySlides" src="tabela3.JPG" width="750" height="600" style="margin: 5px; padding: 5px; border: 1px solid #E8D8C4; border-style: dashed;">
+
+	
+	<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+</div>
+ <div id="footer">
+			Praktyki Zawodowe 2024 - dokumentacja dodatkowa. Strona w sieci od 2024r. &copy; Wszelkie prawa zastrzeżone
+		</div>
